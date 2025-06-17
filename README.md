@@ -28,6 +28,8 @@
 
 ## 🚀 Usage
 
+- Download: https://mega.nz/file/EggXnLIb#9PIKDi_0t4jqsvC4MELgMoBPEg19JTzTngXHATvWd6I
+
 ```bash
 java -jar mc-bots-1.2.14.jar -s serverip:port -c 1500
 ```
