@@ -28,7 +28,7 @@
 
 ## 🚀 Usage
 
-- Download: https://mega.nz/file/EggXnLIb#9PIKDi_0t4jqsvC4MELgMoBPEg19JTzTngXHATvWd6I
+- Download: [CargoX-BOTS](https://mega.nz/file/UogGgR4Z#9PIKDi_0t4jqsvC4MELgMoBPEg19JTzTngXHATvWd6I)
 
 ```bash
 java -jar mc-bots-1.2.14.jar -s serverip:port -c 1500
