@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'me.creepermaxcz.mc-bots'
+version '1.2.14'
+
+sourceCompatibility = 1.17
+targetCompatibility = 1.17
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.opencollab.dev/maven-snapshots/' }
+    maven { url 'https://repo.opencollab.dev/maven-releases/' }
+}
+
+dependencies {
+    implementation 'org.geysermc.mcprotocollib:protocol:1.21.4-SNAPSHOT'
+    implementation 'net.kyori:adventure-text-serializer-gson:4.16.0'
+    implementation 'commons-cli:commons-cli:1.5.0'
+    implementation 'com.diogonunes:JColor:5.2.0'
+    implementation 'dnsjava:dnsjava:3.4.3'
+    implementation 'org.slf4j:slf4j-nop:2.0.13'
+    implementation 'org.jline:jline:3.22.0'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'me.creepermaxcz.mcbots.Main'
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+    from {
+        configurations.runtimeClasspath.filter{ it.exists() }.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
