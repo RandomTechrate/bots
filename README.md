@@ -1,62 +1,75 @@
-# MC-Bots by CargoX
+<p align="center">
+  <img src="https://placehold.co/200x200?text=MC-Bots" alt="MC-Bots by CargoX" width="200"/>
+</p>
 
-A powerful Minecraft bot tool for server stress testing and automation. This tool allows you to create and control multiple Minecraft bots with advanced movement patterns and behaviors.
+<h1 align="center">MC-Bots by CargoX</h1>
+<p align="center">
+  <b>⚡ The ultimate Minecraft bot stress tester and automation tool! ⚡</b><br>
+  <i>Create and control massive bot armies with advanced movement and flooding patterns.</i>
+</p>
 
-## Features
+---
 
-- **Fast Bot Creation**: Create up to 1500 bots simultaneously
-- **Aggressive Movement Patterns**:
-  - Forward/back movement
-  - Side-to-side movement
-  - Diagonal movement
-  - Random direction movement
-  - Random jumping
-  - Random looking
-- **Quick Server Flooding**: Bots join and start moving within seconds
-- **Proxy Support**: Use SOCKS4/SOCKS5 proxies for your bots
-- **Custom Nicknames**: Generate random or real-looking nicknames
-- **Join Messages**: Send custom messages when bots join
-- **Online Mode Support**: Use premium accounts with Microsoft authentication
+## ✨ Features
 
-## Usage
+- 🚀 **Fast Bot Creation:** Up to <b>1500 bots</b> join instantly!
+- 🤖 **Aggressive Movement Patterns:**
+  - ↔️ Forward/back, side-to-side, diagonal, random
+  - 🦘 Random jumping
+  - 👀 Random looking
+- 💥 **Quick Server Flooding:** Bots join and move within seconds
+- 🛡️ **Proxy Support:** SOCKS4/SOCKS5 proxies
+- 🏷️ **Custom Nicknames:** Realistic or random
+- 💬 **Join Messages:** Custom messages/commands on join
+- 🔒 **Online Mode:** Premium account support (Microsoft)
+- 🛠️ **Highly Configurable:** Tons of CLI options
 
-Basic usage:
+---
+
+## 🚀 Usage
+
 ```bash
 java -jar mc-bots-1.2.14.jar -s serverip:port -c 1500
 ```
 
-### Command Line Options
+---
 
-- `-s, --server`: Server IP[:port] (required)
-- `-c, --count`: Number of bots to create (default: 1, max: 1500)
-- `-d, --delay`: Connection delay in ms <min> <max>
-- `-r, --real`: Generate real-looking nicknames
-- `-n, --nocolor`: Disable colored chat messages
-- `-p, --prefix`: Set bot nickname prefix
-- `-j, --join-msg`: Join messages/commands (separated by &&)
-- `-l, --proxy-list`: Path/URL to proxy list file
-- `-t, --proxy-type`: Proxy type (SOCKS4 or SOCKS5)
-- `-o, --online`: Use online mode (premium account)
-- `-ar, --auto-respawn`: Set autorespawn delay (-1 to disable)
+## 🛠️ Command Line Options
 
-### Examples
+| Option                | Description                                         |
+|-----------------------|-----------------------------------------------------|
+| `-s, --server`        | Server IP[:port] (required)                         |
+| `-c, --count`         | Number of bots (default: 1, max: 1500)              |
+| `-d, --delay`         | Connection delay in ms `<min> <max>`                |
+| `-r, --real`          | Use real-looking nicknames                          |
+| `-n, --nocolor`       | Disable colored chat messages                       |
+| `-p, --prefix`        | Set bot nickname prefix                             |
+| `-j, --join-msg`      | Join messages/commands (separated by `&&`)          |
+| `-l, --proxy-list`    | Path/URL to proxy list file                         |
+| `-t, --proxy-type`    | Proxy type: SOCKS4 or SOCKS5                        |
+| `-o, --online`        | Use online mode (premium account)                   |
+| `-ar, --auto-respawn` | Set autorespawn delay (-1 to disable)               |
 
-1. Basic usage with 100 bots:
-```bash
-java -jar mc-bots-1.2.14.jar -s mc.example.com -c 100
-```
+---
 
-2. Using proxies with real nicknames:
-```bash
-java -jar mc-bots-1.2.14.jar -s mc.example.com -c 500 -r -l proxies.txt -t SOCKS4
-```
+## 📦 Examples
 
-3. Using online mode with custom join messages:
-```bash
-java -jar mc-bots-1.2.14.jar -s mc.example.com -c 1 -o -j "Hello!&&/spawn"
-```
+- **100 bots:**
+  ```bash
+  java -jar mc-bots-1.2.14.jar -s mc.example.com -c 100
+  ```
+- **Proxies + real nicks:**
+  ```bash
+  java -jar mc-bots-1.2.14.jar -s mc.example.com -c 500 -r -l proxies.txt -t SOCKS4
+  ```
+- **Online mode + join messages:**
+  ```bash
+  java -jar mc-bots-1.2.14.jar -s mc.example.com -c 1 -o -j "Hello!&&/spawn"
+  ```
 
-## Bot Behavior
+---
+
+## 🤖 Bot Behavior
 
 - Bots join the server as fast as possible
 - After joining, bots perform aggressive movement patterns
@@ -64,7 +77,9 @@ java -jar mc-bots-1.2.14.jar -s mc.example.com -c 1 -o -j "Hello!&&/spawn"
 - No reconnection attempts for faster server flooding
 - Movement updates every 20ms for maximum efficiency
 
-## Proxy List Format
+---
+
+## 🌐 Proxy List Format
 
 Create a text file with one proxy per line in the format:
 ```
@@ -73,13 +88,17 @@ ip:port
 ip:port
 ```
 
-## Notes
+---
+
+## 📝 Notes
 
 - For online mode, you'll need to authenticate with a Microsoft account
 - The tool is optimized for maximum server stress
 - Use responsibly and only on servers you own or have permission to test
 
-## Credits
+---
+
+## 🏆 Credits
 
 Created by CargoX
 Based on the original mc-bots project
